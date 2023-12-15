@@ -1,0 +1,5 @@
+## Building a module
+f2py -m sph3D --f90flags='-O3 -mcmodel=medium -fopenmp -mieee-fp -ftree-vectorize -march=native' -lgomp -c sph3D.f90
+
+## Debug
+## -fcheck=all -Wall -Wextra -fbacktrace 
